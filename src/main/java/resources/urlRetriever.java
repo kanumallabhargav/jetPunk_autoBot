@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class urlRetriever 
 {
-	private static ArrayList<String> read_url_config() throws IOException
+	private static ArrayList<String> read_urlConfig() throws IOException
 	{
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/config/urlResourceConfig.properties");
@@ -22,13 +22,13 @@ public class urlRetriever
 	
 	public static String getHomePage_url() throws IOException
 	{
-		ArrayList<String> retList = read_url_config();
+		ArrayList<String> retList = read_urlConfig();
 		String homePage_url = retList.get(0);
 		return homePage_url;
 	}
 	public static String getFieldSobrietyTest_url() throws IOException
 	{
-		ArrayList<String> retList = read_url_config();
+		ArrayList<String> retList = read_urlConfig();
 		String fieldSobrietyTest_url = retList.get(1);
 		return fieldSobrietyTest_url;
 	}
