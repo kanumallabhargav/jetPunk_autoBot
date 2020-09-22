@@ -16,6 +16,7 @@ public class urlRetriever
 		ArrayList<String> propsList = new ArrayList<String>();
 		propsList.add(prop.getProperty("homePage"));
 		propsList.add(prop.getProperty("fieldSobrietyTest"));
+		propsList.add(prop.getProperty("fastMathDouble"));
 		
 		return propsList;
 	}
@@ -31,5 +32,11 @@ public class urlRetriever
 		ArrayList<String> retList = read_urlConfig();
 		String fieldSobrietyTest_url = retList.get(1);
 		return fieldSobrietyTest_url;
+	}
+	public static String getFastMathDouble_url() throws IOException
+	{
+		ArrayList<String> retList = read_urlConfig();
+		String fastMathDouble_url = retList.get(2);
+		return fastMathDouble_url;
 	}
 }
