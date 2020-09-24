@@ -15,8 +15,7 @@ import resources.partialFilePaths;
 public class countriesReader 
 {
 	@SuppressWarnings("resource")
-	//public static void main(String[] args) throws IOException
-	public ArrayList<String> countriesAndCapitalsList(String category) throws IOException
+	public static ArrayList<String> countriesAndCapitalsList(String category) throws IOException
 	{
 		FileInputStream countriesFile = new FileInputStream(System.getProperty("user.dir")+partialFilePaths.getcountriesAndCapitals_partialPath());
 		XSSFWorkbook workbook = new XSSFWorkbook(countriesFile);

@@ -8,6 +8,7 @@ public class partialFilePaths
 	private static String browserConfig_partialPath = "/src/main/java/config/browserConfig.properties";
 	private static String chromeDriver_partialPath = "/src/main/java/drivers/chromedriver";
 	private static String geckoDriver_partialPath = "/src/main/java/drivers/geckodriver";
+	private static String SS3_testDataConfig_partialPath = "/src/main/java/config/SS3_testDataConfig.properties";
 	
 	public static String getcountriesAndCapitals_partialPath()
 	{
@@ -32,5 +33,9 @@ public class partialFilePaths
 	public static String getGeckoDriver_partialPath()
 	{
 		return geckoDriver_partialPath;
+	}
+	public static String getSS3_testDataConfig_partialPath()
+	{
+		return SS3_testDataConfig_partialPath;
 	}
 }

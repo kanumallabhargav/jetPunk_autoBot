@@ -17,6 +17,7 @@ public class urlRetriever
 		propsList.add(prop.getProperty("homePage"));
 		propsList.add(prop.getProperty("fieldSobrietyTest"));
 		propsList.add(prop.getProperty("fastMathDouble"));
+		propsList.add(prop.getProperty("allCountries"));
 		
 		return propsList;
 	}
@@ -38,5 +39,11 @@ public class urlRetriever
 		ArrayList<String> retList = read_urlConfig();
 		String fastMathDouble_url = retList.get(2);
 		return fastMathDouble_url;
+	}
+	public static String getAllCountries_url() throws IOException
+	{
+		ArrayList<String> retList = read_urlConfig();
+		String allCountries_url = retList.get(3);
+		return allCountries_url;
 	}
 }
