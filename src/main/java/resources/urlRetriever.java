@@ -10,7 +10,7 @@ public class urlRetriever
 	private static ArrayList<String> read_urlConfig() throws IOException
 	{
 		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/config/urlResourceConfig.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+partialFilePaths.getUrlResourceConfig_partialPath());
 		prop.load(fis);
 		
 		ArrayList<String> propsList = new ArrayList<String>();

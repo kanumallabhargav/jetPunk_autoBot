@@ -5,12 +5,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Properties;
 
+import resources.partialFilePaths;
+
 public class loginData 
 {
 	private static ArrayList<String> read_loginConfig() throws IOException
 	{
 		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/config/loginConfig.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+partialFilePaths.getLoginConfig_partialPath());
 		prop.load(fis);
 		
 		ArrayList<String> propsList = new ArrayList<String>();

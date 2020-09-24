@@ -11,6 +11,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import resources.partialFilePaths;
+
 
 
 public class Base 
@@ -21,7 +23,7 @@ public class Base
 
 	public WebDriver driverInitialize() throws IOException
 	{
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/config/browserConfig.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+partialFilePaths.getBrowserConfig_partialPath());
 		prop.load(fis);
 		String bName = prop.getProperty("browser");
 
@@ -29,19 +31,19 @@ public class Base
 		{
 		case "chrome":
 		{
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/java/drivers/chromedriver");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+partialFilePaths.getChromeDriver_partialPath());
 			driver = new ChromeDriver();
 		}
 		case "headlessChrome":
 		{
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/java/drivers/chromedriver");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+partialFilePaths.getChromeDriver_partialPath());
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("headless");
 			driver = new ChromeDriver(options);
 		}
 		case "firefox":
 		{
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/src/main/java/drivers/geckodriver");
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+partialFilePaths.getGeckoDriver_partialPath());
 			driver = new FirefoxDriver();
 		}
 		default:
