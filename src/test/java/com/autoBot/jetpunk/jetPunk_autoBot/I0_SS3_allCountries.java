@@ -8,10 +8,10 @@ import org.testng.annotations.Test;
 
 import excelReaders.countriesReader;
 import pageObjects.commonObjects;
-import resources.urlRetriever;
 import testData.SS3_testDataHelper;
 import utilities.Base;
 import utilities.loginHelper;
+import utilities.urlRetriever;
 
 public class I0_SS3_allCountries extends Base
 {

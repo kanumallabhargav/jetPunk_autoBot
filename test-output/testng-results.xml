@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11405" started-at="2020-09-22T15:23:58Z" finished-at="2020-09-22T15:24:09Z">
+  <suite name="Default suite" duration-ms="20756" started-at="2020-09-26T09:59:42Z" finished-at="2020-09-26T10:00:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11405" started-at="2020-09-22T15:23:58Z" finished-at="2020-09-22T15:24:09Z">
+    <test name="Default test" duration-ms="20756" started-at="2020-09-26T09:59:42Z" finished-at="2020-09-26T10:00:03Z">
       <class name="com.autoBot.jetpunk.jetPunk_autoBot.testRunner">
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.autoBot.jetpunk.jetPunk_autoBot.testRunner@7fc229ab]" name="test1" duration-ms="11394" started-at="2020-09-22T20:53:58Z" finished-at="2020-09-22T20:54:09Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.autoBot.jetpunk.jetPunk_autoBot.testRunner@78b729e6]" name="test1" duration-ms="20740" started-at="2020-09-26T15:29:42Z" finished-at="2020-09-26T15:30:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->

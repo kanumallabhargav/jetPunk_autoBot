@@ -9,9 +9,9 @@ import org.testng.annotations.Test;
 
 import pageObjects.I0_SS2_fastMathDouble_objects;
 import pageObjects.commonObjects;
-import resources.urlRetriever;
 import utilities.Base;
 import utilities.loginHelper;
+import utilities.urlRetriever;
 
 public class I0_SS2_fastMathDouble extends Base
 {

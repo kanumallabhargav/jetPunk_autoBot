@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-import resources.partialFilePaths;
+import utilities.partialFilePaths;
 
 public class SS3_testDataHelper 
 {

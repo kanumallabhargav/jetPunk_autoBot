@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Properties;
 
-import resources.partialFilePaths;
+import utilities.partialFilePaths;
 
 public class loginData 
 {
