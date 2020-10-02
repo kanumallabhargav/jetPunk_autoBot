@@ -1,14 +1,18 @@
 package utilities;
 
+import resources.filePathHelper;
+
 public class partialFilePaths 
 {
-	private static String countriesAndCapitals_partialPath = "/src/main/java/excelFiles/countriesAndCapitals.xlsx";
-	private static String urlResourceConfig_partialPath = "/src/main/java/config/urlResourceConfig.properties";
-	private static String loginConfig_partialPath = "/src/main/java/config/loginConfig.properties";
-	private static String browserConfig_partialPath = "/src/main/java/config/browserConfig.properties";
-	private static String chromeDriver_partialPath = "/src/main/java/drivers/chromedriver";
-	private static String geckoDriver_partialPath = "/src/main/java/drivers/geckodriver";
-	private static String SS3_testDataConfig_partialPath = "/src/main/java/config/SS3_testDataConfig.properties";
+	private static String separator  = filePathHelper.getSeparator();
+	private static String srcMainJava = separator+"src"+separator+"main"+separator+"java";
+	private static String countriesAndCapitals_partialPath = srcMainJava+separator+"excelFiles"+separator+"countriesAndCapitals.xlsx";
+	private static String urlResourceConfig_partialPath = srcMainJava+separator+"config"+separator+"urlResourceConfig.properties";
+	private static String loginConfig_partialPath = srcMainJava+separator+"config"+separator+"loginConfig.properties";
+	private static String browserConfig_partialPath = srcMainJava+separator+"config"+separator+"browserConfig.properties";
+	private static String chromeDriver_partialPath = srcMainJava+separator+"drivers"+separator+"chromedriver";
+	private static String geckoDriver_partialPath = srcMainJava+separator+"drivers"+separator+"geckodriver";
+	private static String SS3_testDataConfig_partialPath = srcMainJava+separator+"config"+separator+"SS3_testDataConfig.properties";
 	
 	public static String getcountriesAndCapitals_partialPath()
 	{
