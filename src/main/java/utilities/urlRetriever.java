@@ -18,6 +18,10 @@ public class urlRetriever
 		propsList.add(prop.getProperty("fieldSobrietyTest"));
 		propsList.add(prop.getProperty("fastMathDouble"));
 		propsList.add(prop.getProperty("allCountries"));
+		propsList.add(prop.getProperty("fastMathMultiply"));
+		propsList.add(prop.getProperty("fastMathDivide"));
+		propsList.add(prop.getProperty("fastMathSquareRoot"));
+		propsList.add(prop.getProperty("fastMathAddition"));
 		
 		return propsList;
 	}
@@ -45,5 +49,29 @@ public class urlRetriever
 		ArrayList<String> retList = read_urlConfig();
 		String allCountries_url = retList.get(3);
 		return allCountries_url;
+	}
+	public static String getFastMathMultiply_url() throws IOException
+	{
+		ArrayList<String> retList = read_urlConfig();
+		String fastMathMultiply_url = retList.get(4);
+		return fastMathMultiply_url;
+	}
+	public static String getFastMathDivide_url() throws IOException
+	{
+		ArrayList<String> retList = read_urlConfig();
+		String fastMathDivide_url = retList.get(5);
+		return fastMathDivide_url;
+	}
+	public static String getFastMathSquareRoot_url() throws IOException
+	{
+		ArrayList<String> retList = read_urlConfig();
+		String fastMathSquareRoot_url = retList.get(6);
+		return fastMathSquareRoot_url;
+	}
+	public static String getFastMathAdd_url() throws IOException
+	{
+		ArrayList<String> retList = read_urlConfig();
+		String fastMathAdd_url = retList.get(7);
+		return fastMathAdd_url;
 	}
 }
